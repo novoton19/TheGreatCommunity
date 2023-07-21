@@ -1,0 +1,28 @@
+/*
+	DEVELOPER INFO
+	Name: Novotny Ondrej
+	Email: ondrej.novotny1410@gmail.com
+	
+	STYLESHEET INFO
+	Description: Css for profile page
+*/
+#profile
+{
+	width: 100%;
+}
+#profile h1
+{
+	margin-bottom: 0px;
+}
+#profile .email, #profile .registrationTime
+{
+	width: 100%;
+
+	font-size: 15px;
+}
+#profile .email
+{
+	margin-bottom: 15px;
+
+	color: #555;
+}

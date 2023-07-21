@@ -1,0 +1,298 @@
+/*
+	DEVELOPER INFO
+	Name: Novotny Ondrej
+	Email: ondrej.novotny1410@gmail.com
+	
+	STYLESHEET INFO
+	Description: Css for all pages
+*/
+/*
+GENERAL CSS
+*/
+body
+{
+	margin: 0px;
+	padding: 0px;
+
+	display: flex;
+	flex-direction: column;
+
+	font-family: 'Roboto', sans-serif;
+
+	background-color: #e7e7e7;
+}
+body *
+{
+	box-sizing: border-box;
+	float: left;
+
+	color: #222;
+}
+h1, h2, h3, h4, h5
+{
+	width: 100%;
+	
+	margin: 0px;
+	margin-bottom: 10px;
+	padding: 0px;
+	
+	color: #111;
+}
+h1
+{
+	font-size: 30px;
+	line-height: 40px;
+}
+h2
+{
+	font-size: 25px;
+	line-height: 30px;
+}
+p
+{
+	width: 100%;
+
+	margin: 5px 0px;
+	line-height: 36px;
+}
+p span:not(:last-child)
+{
+	margin-right: 5px;
+}
+.hidden
+{
+	display: none !important;
+}
+.tip
+{
+	width: calc(400px + 20%);
+
+	margin: 0 auto;
+	padding: 5px;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	float: none;
+
+	background-color: #ffd69b;
+}
+.tip *:not(:last-child)
+{
+	margin-right: 5px;
+}
+
+/*
+BUTTONS
+*/
+
+.button
+{
+	padding: 5px 10px;
+	border-radius: 10px;
+	line-height: 24px;
+	
+	background-color: #eee;
+	color: #222;
+	border: 1px solid #c7c7c7;
+	
+	text-decoration: none;
+}
+.button.orange
+{
+	background-color: #ccc;
+}
+.button:not(:last-child)
+{
+	margin-right: 5px;
+}
+.button, button, input[type="submit"]
+{
+	transition: 0.3s background-color;
+}
+.button:hover, button:hover
+{
+	background-color: #ccc;
+}
+.button.orange:hover, input[type="submit"]:hover
+{
+	background-color: #ff8a31;
+	color: #222;
+}
+
+/*
+HEADER, CONTENT, FOOTER
+*/
+
+#header, #content, #footer
+{
+	width: 100%;
+}
+#header
+{
+	padding: 10px;
+
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	
+	background-color: #ff8a31;
+	
+}
+#header .logo
+{
+	height: 50px;
+}
+#content
+{
+	width: calc(400px + 20%);
+
+	margin: 0 auto;
+	padding: 20px;
+
+	display: flex;
+	flex-direction: column;
+	float: none;
+
+	background-color: #eee;
+}
+
+/*
+FORMS
+*/
+
+#content form
+{
+	width: 100%;
+
+	margin: 10px 0px;
+	padding: 5px;
+}
+#header form.searchForm
+{
+	width: 30%;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+form.searchForm
+{
+	display: flex;
+}
+form.searchForm .inputWrapper:first-child
+{
+	width: calc(100% - 100px);
+	max-width: 300px;
+
+	margin-right: 5px;
+}
+form.searchForm input[name="s"]
+{
+	width: 100%;
+}
+form .formReason
+{
+	width: 100%;
+
+	margin-bottom: 5px;
+	line-height: 24px;
+
+	display: flex;
+	align-items: center;
+}
+form .formReason.invalid *
+{
+	color: #c90000;
+}
+form .formReason.valid *
+{
+	color: #007900;
+}
+form .formReason *:not(:last-child)
+{
+	margin-right: 5px;
+}
+form:not(.searchForm) .inputWrapper
+{
+	width: 100%;
+}
+form:not(.searchForm) .inputWrapper:not(:last-child)
+{
+	margin-bottom: 10px;
+}
+form .inputWrapper label
+{
+	width: 100%;
+	
+	font-size: 13px;
+}
+form .inputWrapper.invalid label
+{
+	color: #c90000
+}
+form .inputWrapper.invalid input
+{
+	border-color: #c90000
+}
+form .inputWrapper.valid input
+{
+	border-color: #00c900
+}
+input, button
+{
+	padding: 5px 10px;
+	border-radius: 5px;
+	line-height: 24px;
+
+	background-color: #e7e7e7;
+	color: #222;
+	border: 1px solid #c7c7c7;
+}
+button, input[type="submit"]
+{
+	cursor: pointer;
+}
+
+/*
+PROFILE LISTS
+*/
+
+#profilesListWrapper
+{
+	width: 100%;
+
+	padding: 5px;
+	padding-top: 15px;
+	border-top: 1px solid #e0e0e0;
+}
+#profilesList
+{
+	width: 100%;
+}
+#profilesList .searchResult
+{
+	width: 100%;
+
+	padding: 10px 0px;
+	line-height: 35px;
+}
+#profilesList .searchResult:not(:last-child)
+{
+	border-bottom: 1px solid #e0e0e0;
+}
+#profilesList .searchResult .username
+{
+	margin-right: 10px;
+	font-size: 18px;
+}
+#profilesList .searchResult .email
+{
+	font-size: 15px;
+
+	color: #555;
+}
+#profilesList .searchResult .profileUrl
+{
+	float: right;
+}

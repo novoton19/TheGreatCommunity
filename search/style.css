@@ -1,0 +1,32 @@
+/*
+	DEVELOPER INFO
+	Name: Novotny Ondrej
+	Email: ondrej.novotny1410@gmail.com
+	
+	STYLESHEET INFO
+	Description: Css for search page
+*/
+#pagination
+{
+	width: 100%;
+
+	margin-top: 5px;
+	padding: 5px;
+
+	display: flex;
+	justify-content: center;
+}
+#pagination *:not(:last-child)
+{
+	margin-right: 5px;
+}
+#pagination .currentPage
+{
+	padding: 5px 10px;
+	border-radius: 10px;
+	line-height: 24px;
+	
+	background-color: #ff8a31;
+	color: #222;
+	border: 1px solid #ff8a31;
+}
